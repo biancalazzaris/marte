@@ -1,0 +1,80 @@
+let person = {
+  name: 'Carlos', 
+  lastName: 'Santos', 
+  age: '35', 
+  sex: 'male', 
+  single: true, 
+}
+
+const camelcase = person.lastName.toUpperCase()
+
+console.log = (typeof(camelcase));
+camelcase
+
+
+function converter() {
+  let nome = 'Bianca';
+  if(typeof nome === 'string') {
+    return nome.toUpperCase();
+  }
+  return 'Não foi possível converter, tente novamente.';
+}
+converter();
+
+function converter2(nome) {
+  if(typeof nome === 'string') {
+    return nome.toUpperCase();
+  } else if (!nome) {
+    return 'Opa, não existe valor mencionado!'
+  } else
+  return 'Não foi possível converter, tente novamente.';
+}
+converter2('Marcelo');
+converter2(123);
+converter2();
+
+function checkIsString(nome) {
+  if(typeof nome === 'string') {
+    return nome.toUpperCase();
+  } 
+};
+  
+function checkIsEmpty(nome) {
+  if (!nome) {
+    return 'Opa, não existe valor mencionado!'
+  } return checkIsNumber(nome);
+};
+
+function checkIsNumber(nome) {
+  if (typeof nome === 'number') {
+    return 'Opa, números não são strings!'
+  } else {
+    return checkIsString(nome)}
+};
+
+function formatarTextoUpperCase(nome) {
+  return checkIsEmpty(nome); 
+} 
+
+
+formatarTextoUpperCase()
+formatarTextoUpperCase(999)
+formatarTextoUpperCase('jose, paulo')
+formatarTextoUpperCase('marcelo')
+formatarTextoUpperCase('novinho')
+
+
+const revista = [ 'pera', 'abacaxi', true, 1999 ];
+
+revista[0]
+revista.push('maca');
+revista;
+revista.pop()
+revista;
+revista.unshift('acerola');
+revista;
+revista.slice(1);
+revista;
+revista.join('-', 0)
+revista
+revista.length
