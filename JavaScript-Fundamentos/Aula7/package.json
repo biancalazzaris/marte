@@ -1,0 +1,19 @@
+{
+  "name": "lavacar",
+  "version": "1.0.0",
+  "description": "lavacar ",
+  "main": "index.js",
+  "scripts": {
+    "test": "MIT"
+  },
+  "keywords": [
+    "node.js",
+    "javascript"
+  ],
+  "author": "Bianca Lazzaris",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
